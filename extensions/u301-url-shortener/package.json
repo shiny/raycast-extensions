@@ -118,7 +118,7 @@
     },
     {
       "name": "ShortKeyPrompt",
-      "title": "prompt for short key generation",
+      "title": "Prompt for Short Key Generation",
       "description": "Use this prompt to generate any style of short key you want",
       "label": "prompt for short key generation",
       "type": "textfield",
