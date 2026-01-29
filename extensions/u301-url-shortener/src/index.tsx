@@ -11,7 +11,7 @@ interface Result {
   errorMessage?: string;
 }
 
-export default function Command(props: LaunchProps<{ arguments: Arguments.ShortenUrl }>) {
+export default function Command(props: LaunchProps<{ arguments: Arguments.Index }>) {
   const { url, key, comment } = props.arguments;
   const [result, setResult] = useState<Result | null>(null);
   const [isLoading, setLoading] = useState(false);
