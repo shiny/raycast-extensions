@@ -109,12 +109,21 @@
     },
     {
       "name": "generateShortKeyByAI",
-      "title": "AI",
+      "title": "AI (Experimental)",
       "description": "Slow down the process, but generate a more meaningful short key",
       "label": "Generate default short key by AI",
       "type": "checkbox",
       "required": false,
       "default": false
+    },
+    {
+      "name": "ShortKeyPrompt",
+      "title": "prompt for short key generation",
+      "description": "Use this prompt to generate any style of short key you want",
+      "label": "prompt for short key generation",
+      "type": "textfield",
+      "required": true,
+      "default": "Generate a key for shorten URL. The key should be meaningful and easy to remember, only contain letters and numbers, prefer lowercase and can't be too long. "
     }
   ],
   "dependencies": {

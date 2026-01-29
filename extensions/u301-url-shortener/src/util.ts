@@ -34,8 +34,9 @@ export async function shortenURL(options: ShortenOptions) {
     URL += `&domain=${encodeURIComponent(preferences.domainName)}`;
   }
   if (!options.slug && environment.canAccess(AI) && preferences.generateShortKeyByAI) {
+    const instructions = preferences.ShortKeyPrompt;
     const generatedSlug = await AI.ask(
-      `Generate a key for ${options.url} for shorten URL. The key should be meaningful and easy to remember, only contain letters and numbers, prefer lowercase and can't be too long. Output ONLY the key itself, nothing else.`,
+      `URL is ${options.url}. ${instructions}. Output ONLY the key itself, nothing else.`,
     );
     console.log(generatedSlug);
     if (generatedSlug.match(/^[a-zA-Z0-9_-]+$/)) {
