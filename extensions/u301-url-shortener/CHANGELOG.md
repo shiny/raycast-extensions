@@ -1,6 +1,6 @@
 # U301 Url Shortener Changelog
 
-## [Add AI Extension] - {PR_MERGE_DATE}
+## [Add AI Extension] - 2026-01-30
 - Add AI Extension
 - Add parameters for AI generated short key
 - Add parameterized shortening command
